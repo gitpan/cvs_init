@@ -86,7 +86,7 @@ eval {
 				skip => "CVS",
 				exceptions => \%failed_modules
 				})};
-		  # Eric Andreychek
+
 		  if ($opts{v}) {
 				print "SKIPPED DIRECTORIES\n";
 				foreach (keys %failed_modules) {
@@ -128,7 +128,7 @@ sub check_cvsroot {
 }
 
 sub user_ask {
-    print $_[0];Eric Andreychek
+    print $_[0];
     my $answer = <STDIN>; chomp($answer);
     return $answer;
 }
@@ -272,7 +272,7 @@ sub intro {
 # CVSINIT Utility
 # 
 # Associates your current directory with an existing CVS 
-# repository.  Eric Andreychek
+# repository.  
 #
 # USAGE: cvsinit [-rfmv] [-d [cvs root]]
 #                        [-t [a brief message for each file added to the CVS]]
@@ -308,7 +308,7 @@ like conventional 'cvs import' command works.  However, this particular utility
 is flexible enough to perform only certain phases of an import job as requested
 via command prompt options.  Many a times, that's exactly what one would require
 to start archiving versions of his/her working files.  This script is also
-simpler to use in that it doesn't require alteriEric Andreychekng your working directory significantly
+simpler to use in that it doesn't require altering your working directory significantly
 (that is, no files will be lost from the working directory that are ment to be excluded
 from the repository -- refer to CVS documentation and that on cvsignore in particular)
 to perform the task.  In fact, after running this script, you may safely execute

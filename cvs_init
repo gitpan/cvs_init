@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/perl -w
 #  File id
 #
 #       .Copyright (C)  2001 Vladimir Bogdanov
@@ -86,7 +86,7 @@ eval {
 				skip => "CVS",
 				exceptions => \%failed_modules
 				})};
-		  Eric Andreychek
+		  # Eric Andreychek
 		  if ($opts{v}) {
 				print "SKIPPED DIRECTORIES\n";
 				foreach (keys %failed_modules) {
